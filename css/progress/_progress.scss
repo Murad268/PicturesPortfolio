@@ -1,0 +1,34 @@
+.progressSec {
+   padding: 105px 0 105px 0;
+   &__subtitle {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 20px;
+   }
+   &__title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 800;
+      margin-bottom: 50px;
+   }
+   &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-between;
+      column-gap: 40px;
+      row-gap: 60px;
+      margin: 100px auto 0 auto;
+   }
+   &__item {
+      img {
+         display: block;
+         margin: 0 auto;
+      }
+      p {
+         width: 350px;
+         text-align: center;
+         margin-top: 20px;
+         font-size: 15px;
+      }
+   }
+}
