@@ -1,0 +1,33 @@
+.art {
+   .container {
+      padding: 80px 90px 0 90px;
+      background-color: #f7e7e6;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__img {
+      width: max-content;
+   }
+   &__desc {
+      width: 500px;
+      &__title {
+         font-weight: 800;
+         margin-bottom: 70px;
+      }
+      &__desc {
+         font-size: 16px;
+         margin-bottom: 75px;
+      }
+      &__btn {
+         width: 190px;
+         height: 60px;
+         color: white;
+         font-weight: 600;
+         background-color:  #C51ABB;
+         border-radius: 30px;
+      }
+   }
+}

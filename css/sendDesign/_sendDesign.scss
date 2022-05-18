@@ -1,0 +1,43 @@
+.sendDesign {
+   padding: 40px 0 40px 0;
+   position: relative;
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__send {
+      width: 420px;
+      &__subtitle {
+         margin-bottom: 60px;
+      }
+      &__title {
+         font-size: 40px;
+         font-weight: 800;
+      }
+      &__btn {
+         width: 260px;
+         height: 70px;
+         background-color: #C51ABB;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         border-radius: 30px;
+         color: white;
+         margin-top: 70px;
+      }
+   }
+   &__palette {
+      display: block;
+      width: 400px;
+      height: 345px;
+      position: absolute;
+      bottom: -220px;
+      right: 20px;
+      overflow: hidden;
+      img {
+         width: 105%;
+         height: 100%;
+      }
+   }
+}

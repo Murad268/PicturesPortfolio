@@ -1,0 +1,21 @@
+@import './reset/reset';
+@import './header/header';
+@import './sendDesign/sendDesign';
+@import './popular/popular';
+@import './art/art';
+@import './calculator/calculator';
+@import './portfolio/portfolio';
+@import './gift/gift';
+* {
+   font-family: 'Circe Regular', sans-serif;
+}
+body {
+   background-color: white;
+}
+.gift {
+   position: fixed;
+   top: 60px;
+   right: 10px;
+   z-index: 10;
+   cursor: pointer;
+}

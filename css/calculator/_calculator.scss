@@ -1,0 +1,97 @@
+.calculator {
+   padding: 94px 0 124px 0;
+   &__subtitle {
+      text-align: center;
+      font-size: 26px;
+   }
+   &__title {
+      text-align: center;
+      font-size: 50px;
+      font-weight: 800;
+      color: #333333;
+      margin: 40px 0 120px 0;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-around;
+   }
+   &__calc {
+      width: 400px;
+      position: relative;
+      label {
+         background-color: white;
+         border: 2px dashed #B123B5;
+         width: 366px;
+         height: 60px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: absolute;
+         top: 74px;
+         left: -10px;
+         z-index: 10;
+         border-radius: 30px;
+         color: #B123B5;
+         cursor: pointer;
+         i {
+            margin-right: 5px;
+         }
+      }
+      &__title {
+         font-weight: 900;
+         margin: 0 0 40px 90px;
+      }
+      &__file {
+         background-color: #F1F1F4;
+         padding: 30px 5px 30px 5px;
+         color: #848484;
+         appearance: none;
+         width: max-content;
+         font-size: 18px;
+         font-weight: 600;
+         margin-left: 40px;
+      }
+      input {
+         color: #BCBCBC;
+         font-size: 18px;
+         padding: 30px 0 30px 0;
+         font-weight: 600;
+         margin-left: 40px;
+      }
+      &__result {
+         background-color: #F7E7E6;
+         width: 290px;
+         height: 160px;
+         text-align: center;
+         font-size: 14px;
+         display: flex;
+         line-height: 20px;
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 60px;
+         p {
+            width: 185px;
+            color: #333333;
+         }
+     }
+     &__btn {
+        width: 270px;
+        height: 54px;
+        background-color: #BE1DB9;
+        border-radius: 30px;
+        color: white;
+        font-weight: 800;
+        margin-left: 12px;
+     }
+   }
+   &__img {
+        width: 360px;
+        p {
+           margin-left: 18px;
+           width: 100%;
+           text-align: justify;
+           font-size: 13px;
+           line-height: 24px;
+        }
+   }
+}
