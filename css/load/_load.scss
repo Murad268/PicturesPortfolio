@@ -1,0 +1,33 @@
+.load {
+   padding: 50px 0 50px 0;
+   &__wrapper {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   &__desc {
+      &__subtitle {
+         font-size: 20px;
+         margin-bottom: 10px;
+      }
+      &__title {
+         font-size: 40px;
+         font-weight: 900;
+         width: 400px;
+         margin-bottom: 40px;
+      }
+   }
+   &__img {
+      width: 60%;
+      img {
+         width: 100%;
+      }
+   }
+   &__btn {
+      width: 160px;
+      background-color: #BE1DB9;
+      height: 60px;
+      color: white;
+      border-radius: 30px;
+   }
+}
