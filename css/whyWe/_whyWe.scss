@@ -1,0 +1,38 @@
+.whyWe {
+   padding: 112px 0 100px 0;
+   &__subtitle {
+      text-align: center;
+      font-size: 25px;
+   }
+   &__title {
+      text-align: center;
+      font-size: 40px;
+      margin-top: 45px;
+      font-weight: 900;
+      color: #333333;
+   }
+   &__wrapper {
+      margin: 150px auto 0 auto;
+      width: 70%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 260px;
+      row-gap: 176px;
+   }
+   &__item {
+      font-weight: 800;
+      width: 130px;
+      position: relative;
+      img {
+         position: absolute;
+         top: -95px;
+         left: -108px;
+      }
+   }
+   &__item:nth-child(5),  &__item:nth-child(6) {
+      img {
+         top: -91px;
+         left: -148px;
+      }
+   }
+}
