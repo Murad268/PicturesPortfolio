@@ -1,0 +1,64 @@
+.sizes {
+   padding: 100px 0 230px 0;
+   background: url('../../assets/images/sizes/sizes-bg.jpg') 41% center/cover no-repeat;
+   &__subtitle {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 25px;
+   }
+   &__title {
+      text-align: center;
+      font-size: 40px;
+      font-weight: 800;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 75%;
+      margin: 130px auto 0 auto;
+   }
+   &__item {
+      position: relative;
+      .hit {
+         background: #F99300;
+         width: 150px;
+         height: 52px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: white;
+         font-size: 15px;
+         font-weight: 800;
+         position: absolute;
+         bottom: -26px;
+         left: 50%;
+         transform: translateX(-50%);
+      }
+      .size {
+         position: absolute;
+         top: 28px;
+         left: 50%;
+         transform: translateX(-50%);
+         font-size: 25px;
+         color: #A6C7D9;
+         font-weight: 700;
+      }
+   }
+   &__price {
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      &__old {
+         text-decoration: line-through;
+         color: gray
+      }
+      &__new {
+         font-size: 15px;
+         font-weight: 800;
+         margin-top: 6px;
+      }
+   }
+}
