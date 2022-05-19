@@ -9,8 +9,10 @@
    }
    &__brushes {
       position: absolute;
-      bottom: -570px;
-      right: 100px;
+      bottom: 0;
+      right: 30px;
+      z-index: -4;
+      width: 300px;
    }
    &__title {
       text-align: center;
@@ -29,14 +31,21 @@
          margin: 20px auto 0 auto;
          width: max-content;
          border-bottom: 1px dotted black;
+         cursor: pointer;
+      }
+      &__question.active {
+         color: #C51ABB;
       }
       &__answer {
          width: 800px;
          background-color: #f7e7e6;
-         padding: 50px 40px 50px 40px;
          font-size: 14px;
-         margin: 50px auto 0 auto;
+         max-height: 0;
          position: relative;
+         overflow: hidden;
+         transition: all 0.3s ease-out;
+         opacity: 0;
+         margin: 0 auto ;
          #triangle-up {
             width: 0;
             height: 0;
@@ -48,6 +57,16 @@
             transform: translateX(-50%);
             top: -40px;
          }
+      }
+      &__answer.active {
+         width: 800px;
+         background-color: #f7e7e6;
+         padding: 50px 40px 50px 40px;
+         font-size: 14px;
+         margin: 50px auto 0 auto;
+         overflow: visible;
+         opacity: 1;
+         max-height: max-content;
       }
    }
 }
