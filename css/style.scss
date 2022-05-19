@@ -11,6 +11,8 @@
 @import './progress/progress';
 @import './frame/frame';
 @import './load/load';
+@import './review/review';
+@import './questions/questions';
 * {
    font-family: 'Circe Regular', sans-serif;
 }
@@ -21,6 +23,6 @@ body {
    position: fixed;
    top: 60px;
    right: 10px;
-   z-index: 10;
+   z-index: 16;
    cursor: pointer;
 }

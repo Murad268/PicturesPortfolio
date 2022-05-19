@@ -87,6 +87,9 @@
       &__slides {
          height: 617px;
          overflow: hidden;
+         .header__adver__slider__inner {
+            transition: 0.4s all;
+         }
       }
       &__slide {
          height: 617px;
@@ -107,7 +110,7 @@
             margin-bottom: 60px;
          }
          &__title {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 900;
             text-align: center;
             margin-bottom: 90px;

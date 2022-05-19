@@ -6,7 +6,7 @@
    }
    &__title {
       text-align: center;
-      font-size: 50px;
+      font-size: 30px;
       font-weight: 800;
       color: #333333;
       margin: 40px 0 120px 0;
@@ -42,14 +42,18 @@
          margin: 0 0 40px 90px;
       }
       &__file {
-         background-color: #F1F1F4;
+         background-color: inherit;
          padding: 30px 5px 30px 5px;
-         color: #848484;
          appearance: none;
          width: max-content;
          font-size: 18px;
          font-weight: 600;
          margin-left: 40px;
+         color: #848484;
+         option {
+         
+            font-weight: 800;
+         }
       }
       input {
          color: #BCBCBC;
