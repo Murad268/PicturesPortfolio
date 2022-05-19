@@ -24,10 +24,12 @@
          input::placeholder {
             color: black;
             font-family: 'Circe Bold', sans-serif;
+            font-weight: 600;
          }
          textarea::placeholder {
             color: black;
             font-family: 'Circe Bold', sans-serif;
+            font-weight: 600;
          }
          input {
             display: block;
@@ -35,7 +37,8 @@
             height: 50px;
             padding-left: 20px;
             width: 280px;
-            font-weight: 800;
+            font-weight: 400;
+            color: gray;
          }
          textarea {
             display: block;
@@ -45,8 +48,7 @@
             padding: 15px 0 0 20px;
             width: 100%;
             margin-top: 30px;
-            font-weight: 800;
-            color: black;
+            font-weight: 400;
             resize: none;
          }
       }
