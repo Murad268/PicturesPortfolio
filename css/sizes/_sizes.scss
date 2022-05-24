@@ -20,6 +20,7 @@
    }
    &__item {
       position: relative;
+      visibility: visible;
       .hit {
          background: #F99300;
          width: 150px;

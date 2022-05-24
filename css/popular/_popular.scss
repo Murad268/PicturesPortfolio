@@ -5,6 +5,8 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      transition: all 0.3s;
    }
    &__subtitle {
       margin-bottom: 55px;
@@ -19,6 +21,16 @@
       width: 260px;
       height: 350px;
       background-color: #f7e7e6;
+      margin-top: 20px;
+      &__img {
+         width: 150px;
+         height: 220px;
+         img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+         }
+      }
       &__desc {
          font-weight: 800;
          margin: 30px 0 10px 0;
@@ -51,4 +63,8 @@
          margin: 0 5px 0 -15px;
       }
    }
+}
+.load__spinner {
+   display: none;
+   margin: 0 auto;
 }

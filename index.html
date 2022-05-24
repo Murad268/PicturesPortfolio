@@ -61,7 +61,7 @@
                      <div class="header__adver__about__adven">Срочное изготовление за 3 часа!</div>
                   </div>
                   <div class="header__adver__about__alert">Отправьте фото сейчас и получите дизайн через 1 час</div>
-                  <button class="header__adver__about__btn">Заказать портрет</button>
+                  <button class="header__adver__about__btn btn-design">Заказать портрет</button>
                   <div class="header__adver__about__btn__arrow">
                      <img src="./assets/images/header/slider/button-arrow.png" alt="">
                   </div>
@@ -78,7 +78,7 @@
             <div class="sendDesign__send">
                <h5 class="sendDesign__send__subtitle">Просто отправьте фото и</h5>
                <h3 class="sendDesign__send__title">Мы пришлем вам дизайн бесплатно в течение 1 часа!</h3>
-               <button class="sendDesign__send__btn">Заказать дизайн портрета</button>
+               <button class="sendDesign__send__btn btn-design">Заказать дизайн портрета</button>
                <div class="sendDesign__palette">
                   <img src="./assets/images/sendDesign/palette.png" alt="">
                </div>
@@ -96,7 +96,7 @@
          </h3>
          <div class="popular__wrapper">
             <div class="popular__item">
-               <div class="popular_item__img">
+               <div class="popular__item__img">
                   <img src="./assets/images/popular/styles-1.jpg" alt="">
                </div>
                <div class="popular__item__desc">
@@ -107,7 +107,7 @@
                </div>
             </div>
             <div class="popular__item">
-               <div class="popular_item__img">
+               <div class="popular__item__img">
                   <img src="./assets/images/popular/styles-2.jpg" alt="">
                </div>
                <div class="popular__item__desc">
@@ -118,7 +118,7 @@
                </div>
             </div>
             <div class="popular__item">
-               <div class="popular_item__img">
+               <div class="popular__item__img">
                   <img src="./assets/images/popular/styles-3.jpg" alt="">
                </div>
                <div class="popular__item__desc">
@@ -129,7 +129,7 @@
                </div>
             </div>
             <div class="popular__item">
-               <div class="popular_item__img">
+               <div class="popular__item__img">
                   <img src="./assets/images/popular/styles-4.jpg" alt="">
                </div>
                <div class="popular__item__desc">
@@ -140,6 +140,7 @@
                </div>
             </div>
          </div>
+         <img src="./assets/images/spinner/spinner.gif" alt="" class="load__spinner">
          <button class="popular__btn">
             <img src="./assets/images/popular/reload.svg" alt="">
             Посмотреть больше стилей
@@ -159,7 +160,7 @@
                <div class="art__desc__desc">
                   Вы подарите яркие эмоции, запомнится надолго!
                </div>
-               <button class="art__desc__btn">
+               <button class="art__desc__btn btn-consultation btn-consultation">
                   Подробнее об услуге
                </button>
             </div>
@@ -183,27 +184,28 @@
                      Загрузить фотографию
                   </label>
                   <input id="sendPictureCalc" type="file" class="calculator__calc__fileSend">
-                  <select class="calculator__calc__file" value="">
-                        <option>Выберите размер картины</option>
-                        <option>40x50</option>
-                        <option>50x70</option>
-                        <option>70x70</option>
-                        <option>70x100</option>
+                  <select class="calculator__calc__file size">
+                     <option value="0">Выберите размер картины</option>
+							<option value="500">40x50</option>
+							<option value="1000">50x70</option>
+							<option value="1500">70x70</option>
+							<option value="2000">70x100</option>
                   </select>
-                  <select class="calculator__calc__file" value="">
-                        <option>Выберите материал картины</option>
-                        <option title="Изящный, позволяет легко создавать текстуру, подходит для декоративных картин маслом.">Холст из волокна</option>
-                        <option title="Достаточно грубый и создает ощущение реальности, подходит для классических пейзажей, натюрмортов и портретов.">Льняной холст</option>
-                        <option title="Изящный, подходит для всех типов реалистичных портретов.">Холст из натурального хлопка</option>
+                  <select class="calculator__calc__file material">
+                     <option value="0">Выберите материал картины</option>
+							<option value="1"  title="Изящный, позволяет легко создавать текстуру, подходит для декоративных картин маслом.">Холст из волокна</option>
+							<option value="1.2"  title="Достаточно грубый и создает ощущение реальности, подходит для классических пейзажей, натюрмортов и портретов.">Льняной холст</option>
+							<option value="1.5" title="Изящный, подходит для всех типов реалистичных портретов.">Холст из натурального хлопка</option>
+						</select>
                   </select>
-                  <select class="calculator__calc__file" value="">
-                        <option>Дополнительные услуги</option>
-                        <option>Покрытие арт-гелем</option>
-                        <option>Экспресс-изготовление</option>
-                        <option>Доставка готовых работ </option>
+                  <select class="calculator__calc__file adServices">
+                     <option value="0">Дополнительные услуги</option>
+							<option value="1000">Покрытие арт-гелем</option>
+							<option value="2000">Экспресс-изготовление</option>
+							<option value="500">Доставка готовых работ </option>
                   </select>
                   <input type="text" class="promocode" placeholder="Введите ваш промокод">
-                  <div class="calculator__calc__result">
+                  <div class="calculator__calc__result result">
                      <p>Для расчета нужно выбрать размер картины и материал картины</p>
                   </div>
                   <button class="calculator__calc__btn">
@@ -340,7 +342,7 @@
          <div class="sizes__wrapper">
             <div class="sizes__item">
                <div class="size">40x50</div>
-               <img src="./assets/images/sizes/sizes-1.png" alt="">
+               <img src="./assets/images/sizes/sizes-1.png" class="sizes__item__img" alt="">
                <div class="sizes__price">
                   <div class="sizes__price__old">5 290 руб</div>
                   <div class="sizes__price__new">3 670 руб.</div>
@@ -348,7 +350,7 @@
             </div>
             <div class="sizes__item">
                <div class="size">50x70</div>
-               <img src="./assets/images/sizes/sizes-2.png" alt="">
+               <img src="./assets/images/sizes/sizes-2.png" class="sizes__item__img" alt="">
                <div class="sizes__price">
                   <div class="sizes__price__old">5 290 руб</div>
                   <div class="sizes__price__new">3 670 руб.</div>
@@ -356,7 +358,7 @@
             </div>
             <div class="sizes__item">
                <div class="size">70x70</div>
-               <img src="./assets/images/sizes/sizes-3.png" alt="">
+               <img src="./assets/images/sizes/sizes-3.png" class="sizes__item__img" alt="">
                <div class="sizes__price">
                   <div class="sizes__price__old">5 290 руб</div>
                   <div class="sizes__price__new">3 670 руб.</div>
@@ -367,7 +369,7 @@
             </div>
             <div class="sizes__item">
                <div class="size">70x100</div>
-               <img src="./assets/images/sizes/sizes-4.png" alt="">
+               <img src="./assets/images/sizes/sizes-4.png" class="sizes__item__img" alt="">
                <div class="sizes__price">
                   <div class="sizes__price__old">5 290 руб</div>
                   <div class="sizes__price__new">3 670 руб.</div>
@@ -423,7 +425,7 @@
                <div class="frame__desc__desc">
                   Мы можем предложить вам оформление в любую раму из огромного ассортимента по желанию.
                </div>
-               <div class="frame__desc__btn">Подробнее об услуге</div>
+               <button class="frame__desc__btn btn-consultation">Подробнее об услуге</button>
             </div>
          </div>
       </div>
@@ -436,7 +438,7 @@
                <div class="frame__desc__desc">
                   Эксклюзивно, качественно, детальная ручная прорисовка.
                </div>
-               <div class="frame__desc__btn">Подробнее об услуге</div>
+               <button class="frame__desc__btn btn-consultation">Подробнее об услуге</button>
             </div>
             <div class="frame__img">
                <img src="./assets/images/frame/card-3.png" alt="">
@@ -472,6 +474,7 @@
             <div class="review__slide">
                <div class="review__slide__img">
                   <img src="./assets/images/review/feedback-1.png" alt="">
+                  <button class="btn-design">Хочу так же</button>
                </div>
                <div class="review__slide__desc">
                   <div class="review__slide__desc__title">
@@ -488,6 +491,7 @@
             <div class="review__slide">
                <div class="review__slide__img">
                   <img src="./assets/images/review/feedback-2.jpg" alt="">
+                  <button class="btn-design">Хочу так же</button>
                </div>
                <div class="review__slide__desc">
                   <div class="review__slide__desc__title">
@@ -504,6 +508,7 @@
             <div class="review__slide">
                <div class="review__slide__img">
                   <img src="./assets/images/review/feedback-3.jpg" alt="">
+                  <button class="btn-design">Хочу так же</button>
                </div>
                <div class="review__slide__desc">
                   <div class="review__slide__desc__title">
@@ -566,7 +571,7 @@
             <h2 class="frame3__desc__title">
                Мы пришлем вам дизайн бесплатно в течение 1 часа!
             </h2>
-            <button class="frame3__desc__btn">
+            <button class="frame3__desc__btn btn-design">
                Заказать дизайн портрета
             </button>
          </div>
@@ -681,9 +686,53 @@
        </div>
      </section>
    </footer>
-   <!-- Footer -->
  </div>
- <!-- End of .container -->
+ <div class="modal__consultation">
+    <div class="modal__consultation__block">
+       <img src="./assets/images/modal/icons8-close-64.png" alt="" class="modal__close">
+       <div class="modal__consultation__block__title">
+         Остались вопросы? Закажите обратный звонок
+       </div>
+       <form action="" class="modal__consultation__block__form">
+         <input type="text" placeholder="Ваше имя">
+         <input type="tel" placeholder="Ваш телефон">
+          <button>
+             Получить консултацию
+          </button>
+       </form>
+    </div>
+ </div>
+ <div class="modal__gift">
+    <div class="modal__gift__block">
+      <img src="./assets/images/modal/icons8-close-64.png" alt="" class="modal__close">
+       <div class="modal__gift__block__title">
+         У нас для вас есть подарок!
+       </div>
+       <img src="./assets/images/gift.png" alt="" class="modal__gift__block__img">
+       <div class="modal__gift__block__desc">
+         Введите промо-код IWANTPOPART и получите скидку 30% на портрет любого размера в стиле pop-art!
+       </div>
+    </div>
+ </div>
+ <div class="modal__design">
+    <div class="modal__design__block">
+      <img src="./assets/images/modal/icons8-close-64.png" alt="" class="modal__close">
+       <div class="modal__design__block__title">
+         Заказать дизайн портрета
+       </div>
+       <form action="" class="modal__design__form">
+          <label for="for__desinger">
+             <i class="fas fa-camera"></i>
+            Загрузить фотографию</label>
+          <input id="for__desinger" type="file">
+          <input type="tel" placeholder="Ваше имя">
+          <input type="text" placeholder="Ваш телефон">
+          <input type="e-mail" placeholder="Ваш e-mail">
+          <input type="text" placeholder="Коментарий">
+          <button>Отправить дизайнеру</button>
+       </form>
+    </div>
+ </div>
    <script type="module" src="./js/script.js"></script>
 </body>
 </html>

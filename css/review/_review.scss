@@ -37,6 +37,20 @@
       padding: 90px 60px 90px 60px;
       display: flex;
       justify-content: space-between;
+      &__img {
+         position: relative;
+      } 
+      button {
+         width: 200px;
+         height: 60px;
+         background-color: #BF6EC4;
+         color: white;
+         font-weight: 800;
+         position: absolute;
+         bottom: -20px;
+         right: 62px;
+         border-radius: 40px
+      }
       &__desc {
          &__title {
             font-size: 30px;

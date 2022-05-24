@@ -1,0 +1,20 @@
+{
+  "styles": [
+    {
+      "img": "./assets/images/popular/styles-5.jpg",
+      "title": "Пастелью"
+    },
+    {
+      "img": "./assets/images/popular/styles-6.jpg",
+      "title": "Поп-арт"
+    },
+    {
+      "img": "./assets/images/popular/styles-7.png",
+      "title": "Фото-мозаика"
+    },
+    {
+      "img": "./assets/images/popular/styles-8.jpg",
+      "title": "Шарж"
+    }
+  ]
+}
