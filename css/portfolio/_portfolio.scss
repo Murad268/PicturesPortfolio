@@ -22,6 +22,7 @@
       font-size: 20px;
       border-radius: 30px;
       cursor: pointer;  
+      transition: all 0.3s;
    }
    &__tab.active {
       font-size: 18px;
@@ -32,6 +33,7 @@
       align-items: center;
       padding: 0 20px 0 20px;
       height: 50px;
+      width: max-content;
    }
    &__contents {
       margin-top: 80px;
@@ -40,8 +42,23 @@
       grid-gap: 15px;
    }
    &__content {
+      transition: all 0.3s;
       img {
          width: 100%;
       }
+   }
+   &__snipper {
+      display: none;
+      margin: 0 auto;
+   }
+   &__empty {
+      background-color: rgba(0,0,0, 0.3);
+      text-align: center;
+      font-size: 50px;
+      margin-top: -70px;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
    }
 }
