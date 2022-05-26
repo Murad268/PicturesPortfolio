@@ -5,3 +5,4 @@ import newStyles from "./modules/newStyles/newStyles.js";
 import calculate from "./modules/calculate/calculate.js";
 import pictureShow from "./modules/pictureShow/pictureShow.js";
 import filter from "./modules/filter/filter.js";
+import forms from "./modules/forms/forms.js";

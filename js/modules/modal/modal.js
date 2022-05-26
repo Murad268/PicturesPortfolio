@@ -46,7 +46,9 @@ const modal = (triggersSelector, modalSelector) => {
             if(modal.classList.contains("active") ) {
                modal.classList.remove("active")
                document.body.style.paddingRight = '0px'
-               document.querySelector(".gift").style.right = elLeft
+               if(document.querySelector(".gift")) {
+                  document.querySelector(".gift").style.right = elLeft
+               }    
             }
           
             document.body.style.overflow = ""
