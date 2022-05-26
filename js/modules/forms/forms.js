@@ -2,7 +2,8 @@ const forms = (formsSelector, inputSelector, textAreaSelector) => {
    const forms = document.querySelectorAll(formsSelector);
    const inputs = document.querySelectorAll(inputSelector);
    const textAreas = document.querySelectorAll(textAreaSelector);
-   const phones = document.querySelectorAll('[name="phone"]');
+   const phones = document.querySelectorAll('[type="phone"]');
+   const textInputs = document.querySelectorAll('[type="text"]');
    const postData = async (url, data) => {
       const res = await fetch(url, {
          method: "POST",
@@ -10,11 +11,15 @@ const forms = (formsSelector, inputSelector, textAreaSelector) => {
       })
       return await res.text();
    }
-   phones.forEach(phone => {
-      phone.addEventListener("input", () => {
-         phone.value = phone.value.replace(/[^+\d]/g, "")
-      })
-   })
+   
+   $('input[name="phone').mask("+7 (999) 999-99-99");
+   textInputs.forEach(input => {
+      input.addEventListener('keypress', function(e) {
+          if (e.key.match(/[^а-яё 0-9]/ig)) {
+              e.preventDefault();
+          }
+      });
+  });
    const messages = {
       loading: "./assets/images/spinner/spinner.gif",
       succesImg: "./assets/images/forms/img_400782-removebg-preview.png",
@@ -55,14 +60,10 @@ const forms = (formsSelector, inputSelector, textAreaSelector) => {
          }).finally(() => {
             setTimeout(() => {
                modal.remove();
-               inputs.forEach(item => {
-                  item.value = "";
-               })
+               item.reset()
             }, 1000)
             document.body.style.overflow = "";
-            textAreas.forEach(item => {
-               item.value = "";
-            })
+         
             item.querySelector("button").disabled = false;
             modal.style.opacity = 1;
          })

@@ -1,0 +1,37 @@
+.navbar {
+   height: 70px;
+}
+.nav-item {
+   font-size: 15px;
+   font-weight: 600;
+}
+.dropdown-menu {
+   width: 200px;
+   padding-right: 40px;
+}
+.dropdown-item {
+   line-height: 55px;
+}
+.navbar__left {
+   width: 200px;
+   height: 70px;
+   display: block;
+   background-color: #C51ABB;
+   margin-right: 70px;
+   color: white;
+   font-weight: 800;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.navbar__button {
+   width: 200px;
+   height: 60px;
+   background-color: #C51ABB;
+   border-radius: 20px;
+   display: block;
+   color: white;
+   font-weight: 800;
+   margin-left: 60px;
+}

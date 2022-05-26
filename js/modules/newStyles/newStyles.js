@@ -12,7 +12,7 @@ const newStyles = (triggerSelector, parentElement, spinnerSelector) => {
          return await res.json()
    }
    setTimeout(()=> {
-      getStyles('../../../db.json').then(res => {
+      getStyles('./db.json').then(res => {
          res.styles.forEach(item => {
             let element = document.createElement("div");
             let imgBlock = document.createElement("div");

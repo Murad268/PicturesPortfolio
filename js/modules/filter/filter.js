@@ -3,7 +3,7 @@ const filter = (allContentSelector, btnSelector, contentSelector, btnsSelector) 
   const btn = document.querySelector(btnSelector);
   const content = document.querySelectorAll(contentSelector);
   const btns = document.querySelectorAll(btnsSelector);
-
+  
   btn.addEventListener("click", (e) => {
       document.querySelector(".portfolio__snipper").style.display = "block"
       btns.forEach(item => {
